@@ -1,6 +1,6 @@
 <?php
-$people = array('+16464152856' => 'Yuan Tao',
-				'+19179295698' => 'Yan');
+$people = array('' => 'Yuan Tao',
+				'' => 'Yan');
 
 if (!$name = $people[$_REQUEST['From']]){
 		$name = 'Monkey';

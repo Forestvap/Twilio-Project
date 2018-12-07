@@ -23,8 +23,8 @@ import org.apache.http.message.BasicNameValuePair;
 public class SmsSender {
  
     /* Find your sid and token at twilio.com/user/account */
-    public static final String ACCOUNT_SID = "AC9c2bb012a5cf78edc956e954482b3c07";
-    public static final String AUTH_TOKEN = "b662d762a5b7d55bd2579c642e5dc214";
+    public static final String ACCOUNT_SID = "";
+    public static final String AUTH_TOKEN = "";
  
     public static void main(String[] args) throws TwilioRestException {
  
@@ -34,7 +34,7 @@ public class SmsSender {
  
         MessageFactory messageFactory = account.getMessageFactory();
         ArrayList params = new ArrayList();
-        params.add(new BasicNameValuePair("To", "+16464152856")); // Replace with a valid phone number for your account.
+        params.add(new BasicNameValuePair("To", "+14152856")); // Replace with a valid phone number for your account.
         params.add(new BasicNameValuePair("From", "+19899320208")); // Replace with a valid phone number for your account.
         params.add(new BasicNameValuePair("Body", "LOL!"));
         Message sms = messageFactory.create(params);

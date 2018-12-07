@@ -23,7 +23,7 @@ import org.apache.http.message.BasicNameValuePair;
 public class Example {
  
     /* Find your sid and token at twilio.com/user/account */
-    public static final String ACCOUNT_SID = "AC9c2bb012a5cf78edc956e954482b3c07";
+    public static final String ACCOUNT_SID = "";
     public static final String AUTH_TOKEN = "b662d762a5b7d55bd2579c642e5dc214";
  
     public static void main(String[] args) throws TwilioRestException {
@@ -32,8 +32,8 @@ public class Example {
     // Build a filter for the SmsList
     Map<String, String> params = new HashMap<String, String>();
     params.put("Body", "Jenny please?! I love you <3");
-    params.put("To", "+16464152856");
-    params.put("From", "+16464152856");
+    params.put("To", "");
+    params.put("From", "");
  
     SmsFactory messageFactory = client.getAccount().getSmsFactory();
     Sms message = messageFactory.create(params);
